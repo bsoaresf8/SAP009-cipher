@@ -6,15 +6,16 @@ const botaoCifrar= document.getElementById("botao-Cifrar")
 
 botaoCifrar.addEventListener("click", cifrar)
 function cifrar(){
-  alert("Mensagem Cifrada")
-  const string=textAreaCifrarDecifrar.value
- const deslocamento=offset.value
-cipher.encode(deslocamento, string)
-textAreaResultado.value = textAreaCifrarDecifrar.value
+  const string=textAreaCifrarDecifrar.value.toUpperCase()
+ const deslocamento= Number(offset.value)
+
+textAreaResultado.value = cipher.encode(deslocamento, string)
 }
 const botaoDecifrar= document.getElementById("botao-Decifrar")
 botaoDecifrar.addEventListener("click", decifrar)
 function decifrar(){
-  alert ("Mensagem Decifrada")
+  const string=textAreaCifrarDecifrar.value.toUpperCase()
+  const deslocamento= Number(offset.value)
+  textAreaResultado.value = cipher.decode(deslocamento, string)
 
 }

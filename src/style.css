@@ -17,9 +17,11 @@ html, body {
 
 }
 
-button {
-  background: none;
-  border: 0;
+.textArea-tamanho{
+
+  height:100px;
+  width: 200px;
+  resize:none;
 }
 
 header{
