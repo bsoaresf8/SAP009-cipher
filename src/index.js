@@ -7,9 +7,9 @@ const botaoCifrar= document.getElementById("botao-Cifrar")
 botaoCifrar.addEventListener("click", cifrar)
 function cifrar(){
   const string=textAreaCifrarDecifrar.value.toUpperCase()
- const deslocamento= Number(offset.value)
+  const deslocamento= Number(offset.value)
 
-textAreaResultado.value = cipher.encode(deslocamento, string)
+  textAreaResultado.value = cipher.encode(deslocamento, string)
 }
 const botaoDecifrar= document.getElementById("botao-Decifrar")
 botaoDecifrar.addEventListener("click", decifrar)
